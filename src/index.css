@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.body, html {
+  background-image: linear-gradient(to bottom, #051937, #1f2546, #363255, #4c4064, #634e72);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: "Quicksand";
+  height: 100%;
+  color: antiquewhite;
+}
+/*  ------------------ Header -------------------- */
+.header{
+  margin-top: 100px;
+  text-decoration: underline;
+}
+/*  ------------------ Game -------------------- */
+.gameField{
+  margin: 30px;
+  font-size: 2rem;
+}
+.gameField div {
+  border-bottom: 2px solid black;
+  width: 20px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  text-align: center;
+  margin: 3px;
+}
+.game > div:nth-child(-n+2){
+  display: inline-block;
+  vertical-align:top;
+  margin: 7%;
+}
+.hangman img{
+  height: 300px;
+  box-shadow: 0 15px 15px 0px black;
+}
+.btn-playAgain{
+  color: antiquewhite;
+  background-color: #051937;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+/*  ------------------ Keyboard -------------------- */
+.keyboard{
+  margin: auto;
+  width: 50%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(7, auto);
+  gap: 5px;
+}
+.btn-letter{
+  background: none;
+  font-family: "Quicksand";
+  color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.btn-letter:hover{
+  background-color: grey;
+}
+.btn-letter-pushed{
+  background: none;
+  font-family: "Quicksand";
+  color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  opacity: 0.2;
+}
