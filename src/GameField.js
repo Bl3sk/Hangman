@@ -1,6 +1,5 @@
 const GameField = ({word, usedLetters}) => {
     const letters = [...word]
-
     return (
         <div className="gameField">
             {letters.map((letter, index) => (
